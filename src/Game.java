@@ -38,7 +38,7 @@ public class Game {
 
             System.out.println("\nDomanda per: " + current.getName());
             System.out.println(q.getText());
-            System.out.println("Inserisci 1 se corretta, 0 se skip:");
+            System.out.println("Inserisci 1 se corretta, 0 se skip:\uD83D\uDCE1");
 
             int risposta = scanner.nextInt();
 
@@ -55,11 +55,11 @@ public class Game {
 
         // Determinazione vincitore
         if (player1.getScore() > player2.getScore()) {
-            System.out.println("\n🎉 Vince: " + player1.getName());
+            System.out.println("\n Vince: " + player1.getName());
         } else if (player2.getScore() > player1.getScore()) {
-            System.out.println("\n🎉 Vince: " + player2.getName());
+            System.out.println("\n Vince: " + player2.getName());
         } else {
-            System.out.println("\n🤝 Pareggio!");
+            System.out.println("\n Pareggio!");
         }
     }
 }
